@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Week 2 ICE</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="editHeight">Height (meters)</string>
+    <string name="editWeight">Weight (kilograms)</string>
+    <string name="btnGetBmi">Get BMI</string>
+</resources>

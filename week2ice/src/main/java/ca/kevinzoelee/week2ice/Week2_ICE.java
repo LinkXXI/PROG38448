@@ -1,30 +1,25 @@
-package ca.kevinzoelee.testapp;
+package ca.kevinzoelee.week2ice;
 
 import android.app.Activity;
-import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
-import java.util.List;
-
-public class MainActivity extends Activity {
-
-
+public class Week2_ICE extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_week2__ice);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_week2__ice, menu);
         return true;
     }
 
@@ -42,4 +37,15 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void getBMI(View view){
+        double height = Double.valueOf(((EditText)findViewById(R.id.inputHeight)).getText().toString());
+        double weight = Double.valueOf(((EditText)findViewById(R.id.inputWeight)).getText().toString());
+
+        double bmi = weight / (height * height);
+
+        TextView output = (TextView) findViewById(R.id.txtBmiVal);
+        output.setText(String.format("BMI is %.1f", bmi));
+        //output.setText("BMI is" + bmi);
+}
 }
