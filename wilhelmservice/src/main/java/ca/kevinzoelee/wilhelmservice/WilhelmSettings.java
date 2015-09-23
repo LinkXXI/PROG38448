@@ -67,7 +67,7 @@ public class WilhelmSettings extends Activity implements SensorEventListener{
     @Override
     protected void onResume() {
         super.onResume();
-        mSensorManager.registerListener(this, accel, SensorManager.);
+       // mSensorManager.registerListener(this, accel, SensorManager);
     }
 
     @Override

@@ -1,1 +1,1 @@
-include ':app', ':testapp', ':wilhelmservice', ':week2ice'
+include ':app', ':testapp', ':wilhelmservice', ':week2ice', ':week3ice'

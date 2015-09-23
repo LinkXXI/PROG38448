@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/lblPizzaHead"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/swPickDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="@string/swPickup"
+            android:textOn="@string/swDelivery" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rdioGrpSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdioSmall"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rdioSmall" />
+
+        <RadioButton
+            android:id="@+id/rdioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/rdioMedium" />
+
+        <RadioButton
+            android:id="@+id/rdioLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/rdioLarge" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblToppings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/chkCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/chkCheese" />
+
+    <CheckBox
+        android:id="@+id/chkPeperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/chkPeperoni" />
+
+    <CheckBox
+        android:id="@+id/chkGreenPepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/chkGreenPepper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMakeOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="@string/btnMakeOrder"
+            android:onClick="makeOrder"
+            android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">week3ice</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblPizzaHead">Pizza Order</string>
+    <string name="swPickup">Pickup</string>
+    <string name="swDelivery">Delivery</string>
+    <string name="rdioSmall">Small</string>
+    <string name="rdioMedium">Medium</string>
+    <string name="rdioLarge">Large</string>
+    <string name="lblToppings">Toppings</string>
+    <string name="chkCheese">Cheese</string>
+    <string name="chkPeperoni">Peperoni</string>
+    <string name="chkGreenPepper">Green Pepper</string>
+    <string name="btnMakeOrder">Make Order</string>
+
+
+</resources>
