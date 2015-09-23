@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
             output += "no toppings";
         }
         for(int i=0; i < toppings.size(); i++){
-            if(i == toppings.size() -1){
+            if(i == toppings.size() -1 && toppings.size() != 1){
                 output += "and ";
             }
             output += toppings.get(i) + " ";
