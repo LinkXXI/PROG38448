@@ -67,6 +67,7 @@ public class TipCalculator extends Activity implements AdapterView.OnItemSelecte
         spinPeopleAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinPeople = (Spinner) findViewById(R.id.spinPeople);
         spinPeople.setAdapter(spinPeopleAdapter);
+        spinPeople.setOnItemSelectedListener(this);
 
         //add views to class for use later
         txtOtherTip = (EditText) findViewById(R.id.txtOtherTip);
