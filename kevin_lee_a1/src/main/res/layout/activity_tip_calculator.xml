@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btnCleat"
-            android:id="@+id/ctnClear"
+            android:id="@+id/btnClear"
             android:layout_weight="1"
             android:onClick="resetCalculator" />
     </LinearLayout>
