@@ -113,6 +113,7 @@ public class TipCalculator extends Activity implements AdapterView.OnItemSelecte
         if(spinTip.getSelectedItemPosition() == spinTip.getCount() - 1){
             if(txtOtherTip.getText().length() == 0){
                 Toast.makeText(this, "You didn't enter a percentage to use!", Toast.LENGTH_LONG).show();
+                return;
             }
         }
 
@@ -168,9 +169,6 @@ public class TipCalculator extends Activity implements AdapterView.OnItemSelecte
         txtAmount.setText("");
         spinTip.setSelection(0);
         spinPeople.setSelection(0);
-        lblOutPerPerson.setText("");
-        lblOutTotal.setText("");
-        lblOutTip.setText("");
     }
 
     @Override
@@ -180,10 +178,14 @@ public class TipCalculator extends Activity implements AdapterView.OnItemSelecte
             //Check if the element selected is the last one (will be the "other" option
             if(position == parent.getCount() -1){
                 txtOtherTip.setVisibility(View.VISIBLE);
+                txtOtherTip.setText("");
             }else{
                 txtOtherTip.setVisibility(View.INVISIBLE);
                 txtOtherTip.setText("");
             }
+        }
+        if(parent.getAdapter().equals(spinPeopleAdapter)){
+            resetTextFields();
         }
     }
 
@@ -204,15 +206,15 @@ public class TipCalculator extends Activity implements AdapterView.OnItemSelecte
 
     @Override
     public void afterTextChanged(Editable s) {
-        if(lblOutTotal.getText().length() != 0){
-            lblOutPerPerson.setText("");
-            lblOutTotal.setText("");
-            lblOutTip.setText("");
-        }
+        resetTextFields();
     }
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+       resetTextFields();
+    }
+
+    private void resetTextFields(){
         if(lblOutTotal.getText().length() != 0){
             lblOutPerPerson.setText("");
             lblOutTotal.setText("");
