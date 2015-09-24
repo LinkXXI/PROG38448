@@ -86,14 +86,16 @@
             android:layout_height="wrap_content"
             android:text="@string/btnCalc"
             android:id="@+id/btnCalc"
-            android:layout_weight="3" />
+            android:layout_weight="3"
+            android:onClick="calculateTip" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btnCleat"
             android:id="@+id/ctnClear"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="resetCalculator" />
     </LinearLayout>
 
     <TextView
