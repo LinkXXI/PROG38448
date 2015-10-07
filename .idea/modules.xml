@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/testapp/testapp.iml" filepath="$PROJECT_DIR$/testapp/testapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/week2ice/week2ice.iml" filepath="$PROJECT_DIR$/week2ice/week2ice.iml" />
       <module fileurl="file://$PROJECT_DIR$/week3ice/week3ice.iml" filepath="$PROJECT_DIR$/week3ice/week3ice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week4ice/week4ice.iml" filepath="$PROJECT_DIR$/week4ice/week4ice.iml" />
       <module fileurl="file://$PROJECT_DIR$/wilhelmservice/wilhelmservice.iml" filepath="$PROJECT_DIR$/wilhelmservice/wilhelmservice.iml" />
     </modules>
   </component>
