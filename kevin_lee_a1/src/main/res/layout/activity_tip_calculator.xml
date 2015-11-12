@@ -37,7 +37,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/lblTipPerc"
-            android:id="@+id/textView" />
+            android:id="@+id/textView"
+            />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
             android:inputType="numberSigned"
             android:ems="10"
             android:id="@+id/txtOtherTip"
-            android:layout_weight="1"
+            android:layout_weight="5"
             android:visibility="invisible"
             android:hint="@string/txtOtherTipHint" />
 
@@ -93,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btnCleat"
-            android:id="@+id/ctnClear"
+            android:id="@+id/btnClear"
             android:layout_weight="1"
             android:onClick="resetCalculator" />
     </LinearLayout>
