@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="strPlayerName">Player Name</string>
+    <string name="strPositionGoalie">Goalie</string>
+    <string name="strPositionDefence">Defence</string>
+    <string name="strPositionForward">Forward</string>
+    <string name="player_info_activity_label">Player Info</string>
+    <string name="player_listing_activity_label">Player Listing</string>
+    <string name="strNumberOfGoals">Number of Goals</string>
+    <string name="strSave">Save</string>
+    <string name="strViewAll">View All</string>
+    <string name="goals_placeholder">Goals: %d</string>
+</resources>
